@@ -7,18 +7,24 @@ import { HomeComponent } from './home/home.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { LoginComponent } from './login/login.component';
 import {RoutesRoutingModule} from "./routes-routing.module";
+import { SignupComponent } from './signup/signup.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserPanelComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RoutesRoutingModule
+    RoutesRoutingModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
