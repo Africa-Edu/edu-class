@@ -1,0 +1,15 @@
+.userPanel-container {
+  width: 100%;
+  height: 100%;
+}
+.topBar{
+}
+.panel-sidenav-content {
+ height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.userSideNav{
+padding: 20px;
+margin-top:80px;
+}

@@ -1,19 +1,34 @@
-<div class="card">
-  <div class="card-header">
-    <nav class="navbar navbar-light navbar-expand-md">
-      <div class="container-fluid"><a class="navbar-brand" href="#">Africa-Edu</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse"
-             id="navcol-1">
-          <ul class="nav navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#">First Item</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="card-body">
-    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-  </div>
-</div>
+<!--<div class="card">-->
+<!--  <div class="card-header">-->
+<!--    <nav class="navbar navbar-light navbar-expand-md">-->
+<!--      <div class="container-fluid"><a class="navbar-brand" href="#">Africa-Edu</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>-->
+<!--        <div class="collapse navbar-collapse"-->
+<!--             id="navcol-1">-->
+<!--          <ul class="nav navbar-nav">-->
+<!--            <li class="nav-item"><a class="nav-link active" href="#">First Item</a></li>-->
+<!--            <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>-->
+<!--            <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </nav>-->
+<!--  </div>-->
+<!--  <div class="card-body">-->
+<!--    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>-->
+<!--  </div>-->
+<!--</div>-->
+<mat-toolbar class="topBar sticky-top" >
+  <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+  <img src="assets/img/Africa-EduLogo.png" style="height: 72px; width: 72px">
+  <h1>Africa-Edu</h1>
+</mat-toolbar>
+<mat-sidenav-container class="userPanel-container">
+  <mat-sidenav #sidenav class="userSideNav">
+    <mat-nav-list *ngFor="let menu of menus">
+      <a mat-list-item>{{menu.name}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

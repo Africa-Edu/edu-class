@@ -8,8 +8,16 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
 import { LoginComponent } from './login/login.component';
 import {RoutesRoutingModule} from "./routes-routing.module";
 import { SignupComponent } from './signup/signup.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
+import {MaterialComponentModule} from "./materialComponent.module";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatListModule} from "@angular/material/list";
+import {StudentRegFormComponent} from "./signup/student-reg-form/student-reg-form.component";
+import {TeacherRegFormComponent} from "./signup/teacher-reg-form/teacher-reg-form.component";
+import {MatCardModule} from "@angular/material/card";
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -17,14 +25,22 @@ import {MatIconModule} from "@angular/material/icon";
     HomeComponent,
     UserPanelComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    StudentRegFormComponent,
+    TeacherRegFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RoutesRoutingModule,
+    MaterialComponentModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatListModule,
+    MatCardModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
