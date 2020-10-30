@@ -5,11 +5,11 @@
 .topBar{
 }
 .panel-sidenav-content {
- height: 100%;
+ height: auto;
   align-items: center;
   justify-content: center;
 }
 .userSideNav{
 padding: 20px;
-margin-top:80px;
+/*margin-top:30px;*/
 }

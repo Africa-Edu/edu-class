@@ -48,8 +48,8 @@ import {OverlayModule} from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
+  exports: [
+    // CommonModule,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
@@ -96,4 +96,4 @@ import {OverlayModule} from '@angular/cdk/overlay';
     ScrollingModule,
   ]
 })
-export class MaterialComponentModule { }
+export class MaterialModule { }

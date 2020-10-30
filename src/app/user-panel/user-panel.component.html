@@ -23,12 +23,13 @@
   <h1>Africa-Edu</h1>
 </mat-toolbar>
 <mat-sidenav-container class="userPanel-container">
-  <mat-sidenav #sidenav class="userSideNav">
+  <mat-sidenav #sidenav class="userSideNav" mode="push">
     <mat-nav-list *ngFor="let menu of menus">
-      <a mat-list-item>{{menu.name}}</a>
+      <a mat-list-item routerLink="{{menu.path}}">{{menu.name}}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

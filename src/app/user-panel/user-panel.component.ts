@@ -11,9 +11,9 @@ export class UserPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.menus =  [{name:'dashboard', path: "/dashboard"},
-      {name: 'profile', path: '/profile'},
-      {name: 'notes', path: '/notes'}
+    this.menus =  [{name:'dashboard', path: "dashboard"},
+      {name: 'profile', path: 'profile'},
+      {name: 'notes', path: 'notes'}
       ]
   }
 
